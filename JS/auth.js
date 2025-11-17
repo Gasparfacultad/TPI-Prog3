@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mensaje.textContent = "Inicio de sesión exitoso";
         mensaje.style.color = "green";
 
-        console.log("Usuario logueado:", usuarioValido); //  Para verificar rol
+        console.log("Usuario logueado:", usuarioValido);
 
         setTimeout(() => {
           if (usuarioValido.role && usuarioValido.role.toLowerCase() === "admin") {
