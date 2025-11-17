@@ -49,65 +49,6 @@ async function getMenu() {
     }
 }
 
-async function createMenuItem(menuItemData) {
-    try {
-        if (!menuItemData) throw new Error("Datos del ítem del menú no proporcionados");
-
-        const response = await fetch(URL_MENU, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(menuItemData)
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error al crear ítem del menú: ${response.status} ${response.statusText}`);
-        }
-
-        return await response.json();
-    } catch (error) {
-        console.error("Error en createMenuItem:", error);
-        throw error;
-    }
-}
-
-async function updateMenuItem(menuItemId, updatedMenuItemData) {
-    try {
-        if (!menuItemId || !updatedMenuItemData)
-            throw new Error("ID o datos del ítem del menú no proporcionados");
-
-        const response = await fetch(`${URL_MENU}/${menuItemId}`, {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(updatedMenuItemData)
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error al actualizar ítem del menú: ${response.status} ${response.statusText}`);
-        }
-
-        return await response.json();
-    } catch (error) {
-        console.error("Error en updateMenuItem:", error);
-        throw error;
-    }
-}
-
-async function deleteMenuItem(menuItemId) {
-    try {
-        if (!menuItemId) throw new Error("ID del ítem del menú no proporcionado");
-
-        const response = await fetch(`${URL_MENU}/${menuItemId}`, { method: "DELETE" });
-
-        if (!response.ok) {
-            throw new Error(`Error al eliminar ítem del menú: ${response.status} ${response.statusText}`);
-        }
-
-        return await response.json();
-    } catch (error) {
-        console.error("Error en deleteMenuItem:", error);
-        throw error;
-    }
-}
 
 //----------------------------ORDERS---------------------------------------//
 
