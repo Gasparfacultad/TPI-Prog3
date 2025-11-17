@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - Pizzería Online</title>
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>🍕 Pizzería Online</h1>
+    <nav>
+      <button id="btnCerrarSesion">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida">
+      <h2 id="saludoUsuario">Bienvenido, Usuario</h2>
+    </section>
+
+    <!--  Sección de búsqueda y filtro -->
+    <section id="filtros">
+      <input type="text" id="buscador" placeholder="Buscar producto...">
+      <select id="filtroCategoria">
+        <option value="todos">Todas las categorías</option>
+        <option value="pizza">Pizzas</option>
+        <option value="bebida">Bebidas</option>
+        <option value="empanada">Empanadas</option>
+      </select>
+    </section>
+
+    <section id="catalogo">
+      <h2>Nuestro Menú</h2>
+      <p id="mensajeMenu"></p>
+      <div id="contenedorMenu" class="menu-grid">
+      </div>
+    </section>
+
+    <aside id="carritoSection" class="sidebar-carrito" style="display:none;">
+      <h2>🛒 Carrito</h2>
+      <div id="carritoLista"></div>
+      <p id="carritoTotal"><strong>Total: $0</strong></p>
+      <button id="btnConfirmarPedido">Confirmar Pedido</button>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Pizzería Online - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../js/endpoints.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/carrito.js"></script>
+
+  
+</body>
+</html>
