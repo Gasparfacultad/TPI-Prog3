@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Admin Pizzería</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>👨‍💼 Dashboard Admin</h1>
+    <button id="btnCerrarSesion">Cerrar Sesión</button>
+  </header>
+
+  <main>
+    <section id="pedidosSection">
+      <h2>Pedidos</h2>
+      <table id="tablaPedidos">
+        <thead>
+          <tr>
+            <th>ID Pedido</th>
+            <th>Usuario</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas generadas dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="graficoSection">
+      <h2>Resumen de Pedidos</h2>
+      <canvas id="graficoPedidos"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pizzería Online - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../js/endpoints.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
