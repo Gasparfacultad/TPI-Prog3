@@ -17,7 +17,7 @@ body {
 
 /* ---------- HEADER ---------- */
 header {
-  background-color: #2f3640;
+  background-color: #f50505;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -31,7 +31,7 @@ header h1 {
 }
 
 header button {
-  background-color: #e84118;
+  background-color: #494b49;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -42,7 +42,7 @@ header button {
 }
 
 header button:hover {
-  background-color: #c23616;
+  background-color: #4e1a0f;
 }
 
 /* ---------- MAIN ---------- */
@@ -81,7 +81,7 @@ tr:hover {
   background-color: #e1e1e1;
 }
 
-/* ---------- SELECT & BUTTONS ---------- */
+/* ---------- SELECTS Y BOTONES ---------- */
 select {
   padding: 0.4rem 0.6rem;
   border-radius: 5px;
@@ -90,7 +90,7 @@ select {
 }
 
 button.btnActualizar {
-  background-color: #00a8ff;
+  background-color: #f50505;
   color: #fff;
   border: none;
   padding: 0.4rem 0.8rem;
@@ -101,7 +101,7 @@ button.btnActualizar {
 }
 
 button.btnActualizar:hover {
-  background-color: #0097e6;
+  background-color: #630808;
 }
 
 /* ---------- GRÁFICO ---------- */
